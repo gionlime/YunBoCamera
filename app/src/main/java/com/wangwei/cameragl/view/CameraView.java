@@ -69,6 +69,8 @@ public class CameraView extends GLSurfaceView implements GLSurfaceView.Renderer 
         int previewSizeWidth   = previewSize.getWidth();
         int previewSizeHeight  = previewSize.getHeight();
 
+        Log.d(TAG,"jeek previewSize previewSizeWidth: " + previewSizeWidth + " previewSizeHeight: " + previewSizeHeight);
+
         mCameraDrawer.setPreviewSize(previewSizeWidth, previewSizeHeight);
         //默认使用的GLThread.每次刷新的时候，都强制要求是刷新这个GLSurfaceView
         mCameraDrawer.getSurfaceTexture().setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() {
